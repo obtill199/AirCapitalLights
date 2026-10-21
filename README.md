@@ -30,3 +30,20 @@ Each booking then adds a row to the sheet and emails you.
 
 Prices live in two places in `index.html`: the price table near the top and the
 `PRICES` object in the script at the bottom. Change both.
+
+## Offer and image
+
+One-story supplied-light packages have visible footage limits. Two-story homes,
+complex rooflines, and customer-owned lights receive a custom quote. One $20
+promotion applies per home per season. Supplied lights remain company property.
+
+The hero image in `assets/warm-white-roofline.jpg` was created with the built-in
+image generation tool and is labeled as an AI-generated example on the site.
+Prompt: Hyperrealistic wide architectural photograph of a modest single-story
+Wichita brick ranch at blue hour, warm-white C9 bulbs clipped evenly along the
+front roofline and gable, dormant autumn lawn, natural photographic textures
+and lighting, no people, cars, snow, logos, or text.
+
+The initial request asks for contact details and package preferences. Timing,
+referral source, neighbor details, and extras are confirmed during text follow-up.
+Existing endpoint field names are preserved for compatibility.
