@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Air Capital Lights · Christmas Light Installation in Wichita</title>
+<meta name="description" content="Veteran-owned Christmas light installation in Wichita, KS. Flat prices from $249, January takedown included. Call or text (785) 214-8759.">
+<meta property="og:title" content="Air Capital Lights · We hang your Christmas lights">
+<meta property="og:description" content="Flat prices from $249, takedown included. Veteran-owned, Wichita KS. Book online or text (785) 214-8759.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0B1A33">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&family=Big+Shoulders+Display:wght@700;900&display=swap">
+<style>
+  :root {
+    --night: #0B1A33;
+    --night-2: #12264A;
+    --on-night: #FFFFFF;
+    --muted-night: #C9D3E3;
+    --amber: #F5B041;
+    --coral: #FF9A88;
+    --paper: #FFFFFF;
+    --mist: #F2F5F9;
+    --ink: #0E2240;
+    --grey: #4F5B6E;
+    --line: #D5DBE5;
+    --red: #B8322A;
+    --display: 'Big Shoulders Display', Impact, 'Arial Narrow', sans-serif;
+    --body: Archivo, 'Helvetica Neue', Arial, sans-serif;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.55; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left)); padding-right: max(20px, env(safe-area-inset-right)); }
+  h1, h2, h3 { font-family: var(--display); margin: 0; line-height: 1; text-wrap: balance; }
+  h2 { font-weight: 900; font-size: clamp(34px, 6vw, 52px); text-transform: uppercase; }
+  p { margin: 0; }
+  a { color: inherit; }
+  .label { font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  :focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+
+  /* Hero */
+  .hero { position: relative; background: var(--night); color: var(--on-night); padding-block: 104px 64px; overflow: hidden; }
+  .lights { position: absolute; top: 0; left: 0; width: 100%; height: 64px; display: block; }
+  .hero .wrap { display: grid; gap: 22px; }
+  .brand { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; }
+  .brand b { font-family: var(--display); font-weight: 900; font-size: 30px; letter-spacing: 0.06em; line-height: 1; }
+  .badge { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; color: var(--coral); border: 2px solid var(--coral); padding: 7px 10px; line-height: 1; }
+  .hero h1 { font-weight: 900; font-size: clamp(56px, 12vw, 116px); line-height: 0.9; text-transform: uppercase; }
+  .hero .sub { font-size: clamp(18px, 2.6vw, 24px); color: var(--muted-night); max-width: 40ch; }
+  .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 22px; font: 800 17px/1 var(--body); letter-spacing: 0.04em; text-decoration: none; border-radius: 4px; border: 2px solid transparent; cursor: pointer; }
+  .btn-amber { background: var(--amber); color: var(--night); }
+  .btn-ghost { border-color: var(--muted-night); color: var(--on-night); }
+  .btn-ink { background: var(--ink); color: var(--paper); width: 100%; }
+  .btn:disabled { opacity: 0.6; cursor: progress; }
+  .hero .call { font-size: 15px; color: var(--muted-night); }
+  .hero .call a { color: var(--on-night); font-weight: 700; }
+
+  /* Prices */
+  .section { padding-block: 64px; }
+  .section .wrap { display: grid; gap: 22px; }
+  .prices { width: 100%; border-collapse: collapse; border-top: 3px solid var(--ink); font-variant-numeric: tabular-nums; }
+  .prices th { text-align: left; padding: 12px 8px 10px 0; border-bottom: 2px solid var(--ink); }
+  .prices td { padding: 14px 8px 14px 0; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  .prices .pkg { font-family: var(--display); font-weight: 700; font-size: clamp(22px, 4vw, 30px); line-height: 1; display: block; }
+  .prices .desc { font-size: 13px; color: var(--grey); }
+  .prices .amt { font-family: var(--display); font-weight: 900; font-size: clamp(32px, 6vw, 48px); line-height: 1; display: block; }
+  .prices .own { font-size: 13px; color: var(--grey); }
+  .prices .quote { font-family: var(--display); font-weight: 700; font-size: clamp(20px, 4vw, 28px); }
+  .fine { font-size: 14px; color: var(--grey); max-width: 70ch; }
+
+  .includes { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px 28px; }
+  .includes div { display: flex; gap: 10px; align-items: flex-start; }
+  .includes svg { flex: none; margin-top: 4px; }
+  .extras { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px 28px; border-top: 1px solid var(--line); padding-top: 20px; }
+  .extras .label { color: var(--red); display: block; margin-bottom: 4px; }
+
+  /* Booking */
+  .book { background: var(--mist); }
+  form { display: grid; gap: 22px; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: clamp(18px, 4vw, 32px); }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px 20px; }
+  .field { display: grid; gap: 6px; min-width: 0; }
+  .field > label, legend { font-size: 14px; font-weight: 700; }
+  .opt { font-weight: 400; color: var(--grey); }
+  input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+    font: inherit; width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid #AEB8C7; border-radius: 6px; background: var(--paper); color: var(--ink);
+  }
+  textarea { min-height: 88px; resize: vertical; }
+  fieldset { border: 0; margin: 0; padding: 0; display: grid; gap: 8px; min-width: 0; }
+  .choices { display: flex; flex-wrap: wrap; gap: 8px; }
+  .choice { position: relative; }
+  .choice input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+  .choice span { display: inline-flex; align-items: center; min-height: 46px; padding: 0 16px; border: 1px solid #AEB8C7; border-radius: 999px; cursor: pointer; font-size: 16px; background: var(--paper); }
+  .choice input:checked + span { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .choice input:focus-visible + span { outline: 3px solid var(--amber); outline-offset: 2px; }
+  .estimate { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px; background: var(--night); color: var(--on-night); border-radius: 6px; padding: 16px 20px; }
+  .estimate b { font-family: var(--display); font-weight: 900; font-size: clamp(28px, 5vw, 40px); color: var(--amber); line-height: 1; }
+  .estimate small { color: var(--muted-night); font-size: 14px; }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .status { font-size: 15px; color: var(--grey); min-height: 1.4em; }
+  .done { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: clamp(18px, 4vw, 32px); display: grid; gap: 12px; }
+  .done h3 { font-weight: 900; font-size: 40px; text-transform: uppercase; }
+  [hidden] { display: none !important; }
+
+  footer { background: var(--night); color: var(--muted-night); padding-block: 40px; font-size: 15px; }
+  footer .wrap { display: grid; gap: 10px; }
+  footer b { font-family: var(--display); font-weight: 900; font-size: 26px; letter-spacing: 0.06em; color: var(--on-night); }
+  footer a { color: var(--on-night); font-weight: 700; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg class="lights" aria-hidden="true">
+    <defs>
+      <pattern id="strand" width="204" height="64" patternUnits="userSpaceOnUse">
+        <path d="M0 6 Q102 46 204 6" fill="none" stroke="#3D6B57" stroke-width="2.5"/>
+        <g transform="translate(51 21)"><circle cx="0" cy="18" r="13" fill="#F5B041" opacity="0.22"/><rect x="-4" y="0" width="8" height="7" rx="1.5" fill="#3D6B57"/><path d="M-6 7 C-7.5 15 -3 22 0 27 C3 22 7.5 15 6 7 Z" fill="#F5B041"/></g>
+        <g transform="translate(102 26)"><circle cx="0" cy="18" r="13" fill="#F5B041" opacity="0.22"/><rect x="-4" y="0" width="8" height="7" rx="1.5" fill="#3D6B57"/><path d="M-6 7 C-7.5 15 -3 22 0 27 C3 22 7.5 15 6 7 Z" fill="#F5B041"/></g>
+        <g transform="translate(153 21)"><circle cx="0" cy="18" r="13" fill="#F5B041" opacity="0.22"/><rect x="-4" y="0" width="8" height="7" rx="1.5" fill="#3D6B57"/><path d="M-6 7 C-7.5 15 -3 22 0 27 C3 22 7.5 15 6 7 Z" fill="#F5B041"/></g>
+      </pattern>
+    </defs>
+    <rect width="100%" height="64" fill="url(#strand)"/>
+  </svg>
+  <div class="wrap">
+    <div class="brand"><b>AIR CAPITAL LIGHTS</b><span class="badge">VETERAN-OWNED · WICHITA, KS</span></div>
+    <h1>We hang your Christmas lights.</h1>
+    <p class="sub">Up by Thanksgiving. Fixed within 48 hours if anything goes out. Taken down in January. You never touch a ladder.</p>
+    <div class="ctas">
+      <a class="btn btn-amber" href="#book">Book online</a>
+      <a class="btn btn-ghost" href="sms:+17852148759">Text (785) 214-8759</a>
+    </div>
+    <p class="call">Rather talk? Call <a href="tel:+17852148759">(785) 214-8759</a>.</p>
+  </div>
+</header>
+
+<main>
+  <section class="section" aria-labelledby="prices-h">
+    <div class="wrap">
+      <h2 id="prices-h">Flat price for your house</h2>
+      <table class="prices">
+        <thead><tr><th class="label">Package</th><th class="label">One story</th><th class="label">Two story</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="pkg">Front roofline</span><span class="desc">The side facing the street</span></td>
+            <td><span class="amt">$249</span><span class="own">$149 with your lights</span></td>
+            <td><span class="amt">$399</span><span class="own">$299 with your lights</span></td>
+          </tr>
+          <tr>
+            <td><span class="pkg">Front + sides</span><span class="desc">Front plus both sides</span></td>
+            <td><span class="amt">$399</span><span class="own">$249 with your lights</span></td>
+            <td><span class="amt">$599</span><span class="own">$449 with your lights</span></td>
+          </tr>
+          <tr>
+            <td><span class="pkg">Whole house</span><span class="desc">Every side of the roofline</span></td>
+            <td><span class="amt">$549</span><span class="own">$349 with your lights</span></td>
+            <td><span class="quote">Free quote</span><br><span class="own">Measured on site</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="fine">Prices include our commercial LED C9 lights in warm white. The smaller price is for hanging lights you already own. Fits most homes: up to 70, 120 and 180 ft of roofline; bigger homes get a free quote. Plus Kansas sales tax. Installs booked after Dec 1 add $50.</p>
+
+      <div class="includes" role="list">
+        <div role="listitem"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#B8322A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Plastic clips only. No nails, staples or marks.</span></div>
+        <div role="listitem"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#B8322A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Anything goes out, we fix it within 48 hours.</span></div>
+        <div role="listitem"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#B8322A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Takedown Jan 4–24. You don't need to be home.</span></div>
+        <div role="listitem"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#B8322A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>With our lights: a timer, and we store them for next year.</span></div>
+      </div>
+
+      <div class="extras">
+        <p><span class="label">More lights?</span>Shrubs, trees, walkways and wreaths get a free quote. Mention them when you book.</p>
+        <p><span class="label">Neighbor deal</span>Two houses on the same street book? You each save $20.</p>
+        <p><span class="label">How payment works</span>A 50% deposit holds your install date. The rest is due on install day. No January bill.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section book" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <h2 id="book-h">Book your install</h2>
+      <p>Fill this out and Oliver will text you within 24 hours to confirm your price and date. Nothing is due until you say yes.</p>
+
+      <form id="booking" novalidate>
+        <div class="grid2">
+          <div class="field"><label for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="phone">Mobile phone</label><input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" pattern="[0-9()+\-.\s]{10,}" required></div>
+          <div class="field"><label for="address">Service address</label><input type="text" id="address" name="address" autocomplete="street-address" placeholder="Street, city, ZIP" required></div>
+          <div class="field"><label for="email">Email <span class="opt">(optional)</span></label><input type="email" id="email" name="email" autocomplete="email"></div>
+        </div>
+
+        <fieldset>
+          <legend>Whose lights?</legend>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="lights" value="Our LED lights" required><span>Your LED lights</span></label>
+            <label class="choice"><input type="radio" name="lights" value="Customer's own lights"><span>I have my own</span></label>
+            <label class="choice"><input type="radio" name="lights" value="Not sure"><span>Not sure</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>How tall is your house?</legend>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="height" value="One story" required><span>One story</span></label>
+            <label class="choice"><input type="radio" name="height" value="Two story"><span>Two story</span></label>
+            <label class="choice"><input type="radio" name="height" value="Not sure"><span>Not sure</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Which package?</legend>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="package" value="Front roofline" required><span>Front roofline</span></label>
+            <label class="choice"><input type="radio" name="package" value="Front + sides"><span>Front + sides</span></label>
+            <label class="choice"><input type="radio" name="package" value="Whole house"><span>Whole house</span></label>
+            <label class="choice"><input type="radio" name="package" value="Not sure"><span>Not sure</span></label>
+          </div>
+        </fieldset>
+
+        <div class="estimate" aria-live="polite">
+          <span class="label">Your price</span>
+          <b id="estimate">Pick your options</b>
+          <small id="estimate-note">Plus Kansas sales tax. Confirmed by text before you pay anything.</small>
+        </div>
+
+        <fieldset>
+          <legend>Want more lights? <span class="opt">(free quote)</span></legend>
+          <div class="choices">
+            <label class="choice"><input type="checkbox" name="extras" value="Shrubs"><span>Shrubs</span></label>
+            <label class="choice"><input type="checkbox" name="extras" value="Trees"><span>Trees</span></label>
+            <label class="choice"><input type="checkbox" name="extras" value="Walkway"><span>Walkway</span></label>
+            <label class="choice"><input type="checkbox" name="extras" value="Wreaths"><span>Wreaths</span></label>
+          </div>
+        </fieldset>
+
+        <div class="grid2">
+          <div class="field">
+            <label for="timing">When do you want them up?</label>
+            <select id="timing" name="timing" required>
+              <option value="">Choose one</option>
+              <option>Before Thanksgiving (Nov 26)</option>
+              <option>Early December</option>
+              <option>Soonest available</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="heard">How did you hear about us? <span class="opt">(optional)</span></label>
+            <select id="heard" name="heard">
+              <option value="">Choose one</option>
+              <option>Door hanger</option>
+              <option>Flyer</option>
+              <option>Neighbor</option>
+              <option>Facebook</option>
+              <option>Nextdoor</option>
+              <option>Yard sign</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label for="neighbor">Neighbor booking too? <span class="opt">(name or address, for the $20 deal)</span></label><input type="text" id="neighbor" name="neighbor"></div>
+          <div class="field"><label for="notes">Anything else? <span class="opt">(gate code, dogs, HOA rules)</span></label><textarea id="notes" name="notes"></textarea></div>
+        </div>
+
+        <div class="hp" aria-hidden="true"><label for="website">Leave this empty</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
+
+        <button class="btn btn-ink" type="submit" id="submit">Request my install</button>
+        <p class="status" id="status" role="status"></p>
+      </form>
+
+      <div class="done" id="done" hidden>
+        <h3>You're on the list.</h3>
+        <p id="done-msg"></p>
+        <p>Didn't hear back within a day? Text <a href="sms:+17852148759">(785) 214-8759</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>AIR CAPITAL LIGHTS</b>
+    <p>Veteran-owned Christmas light installation in Wichita, KS.</p>
+    <p>Call or text <a href="tel:+17852148759">(785) 214-8759</a> · Installs Nov 9 – Dec 15 · Takedown Jan 4–24</p>
+  </div>
+</footer>
+
+<script>
+  // Paste the Google Apps Script web app URL here (see README). Empty = bookings go out as a pre-filled text message.
+  const BOOKING_ENDPOINT = '';
+  const PHONE = '+17852148759';
+
+  const PRICES = {
+    'One story': { 'Front roofline': 249, 'Front + sides': 399, 'Whole house': 549 },
+    'Two story': { 'Front roofline': 399, 'Front + sides': 599, 'Whole house': null },
+  };
+  const OWN_LIGHTS_DISCOUNT = { 'Front roofline': 100, 'Front + sides': 150, 'Whole house': 200 };
+
+  const form = document.getElementById('booking');
+  const estimateEl = document.getElementById('estimate');
+  const statusEl = document.getElementById('status');
+  const submitBtn = document.getElementById('submit');
+
+  const picked = (name) => {
+    const el = form.querySelector(`input[name="${name}"]:checked`);
+    return el ? el.value : '';
+  };
+
+  function estimate() {
+    const lights = picked('lights');
+    const height = picked('height');
+    const pkg = picked('package');
+    if (!height || !pkg) return 'Pick your options';
+    if (height === 'Not sure' || pkg === 'Not sure') return 'We’ll quote it';
+    const ours = PRICES[height][pkg];
+    if (ours == null) return 'Free quote';
+    const own = ours - OWN_LIGHTS_DISCOUNT[pkg];
+    if (lights === 'Our LED lights') return `$${ours}`;
+    if (lights === "Customer's own lights") return `$${own}`;
+    return `$${ours} ours · $${own} yours`;
+  }
+
+  function collect() {
+    const fd = new FormData(form);
+    return {
+      name: (fd.get('name') || '').trim(),
+      phone: (fd.get('phone') || '').trim(),
+      email: (fd.get('email') || '').trim(),
+      address: (fd.get('address') || '').trim(),
+      lights: picked('lights'),
+      height: picked('height'),
+      package: picked('package'),
+      extras: fd.getAll('extras').join(', '),
+      timing: fd.get('timing') || '',
+      neighbor: (fd.get('neighbor') || '').trim(),
+      heard: fd.get('heard') || '',
+      notes: (fd.get('notes') || '').trim(),
+      estimate: estimate(),
+      website: fd.get('website') || '',
+    };
+  }
+
+  function smsLink(d) {
+    const lines = [
+      'Air Capital Lights booking',
+      `Name: ${d.name}`,
+      `Phone: ${d.phone}`,
+      `Address: ${d.address}`,
+      `Lights: ${d.lights}`,
+      `House: ${d.height}`,
+      `Package: ${d.package} (${d.estimate})`,
+      d.extras && `More lights: ${d.extras}`,
+      `When: ${d.timing}`,
+      d.neighbor && `Neighbor: ${d.neighbor}`,
+      d.notes && `Notes: ${d.notes}`,
+    ].filter(Boolean);
+    return `sms:${PHONE}?&body=${encodeURIComponent(lines.join('\n'))}`;
+  }
+
+  function showDone(d, viaText) {
+    form.hidden = true;
+    document.getElementById('done-msg').textContent = viaText
+      ? `Thanks, ${d.name}. Your text app should open with your details filled in. Hit send and Oliver will confirm your price and date.`
+      : `Thanks, ${d.name}. Oliver will text you at ${d.phone} within 24 hours to confirm your price and date. A 50% deposit holds your spot.`;
+    const done = document.getElementById('done');
+    done.hidden = false;
+    done.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  form.addEventListener('change', () => { estimateEl.textContent = estimate(); });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+    const d = collect();
+    if (d.website) return;
+    submitBtn.disabled = true;
+    statusEl.textContent = 'Sending…';
+    if (BOOKING_ENDPOINT) {
+      try {
+        // Apps Script doesn't send CORS headers, so the response is opaque; reaching the server is enough.
+        await fetch(BOOKING_ENDPOINT, { method: 'POST', mode: 'no-cors', body: new URLSearchParams(d) });
+        showDone(d, false);
+        return;
+      } catch (err) {
+        statusEl.textContent = 'Couldn’t reach the booking system, so we’ll send it by text instead.';
+      }
+    }
+    window.location.href = smsLink(d);
+    showDone(d, true);
+  });
+</script>
+</body>
+</html>
