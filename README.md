@@ -2,7 +2,7 @@
 
 One-page website and booking form for Air Capital Lights, a veteran-owned Christmas
 light installer in Wichita, KS. Hosted free on GitHub Pages at
-https://obtill199.github.io/AirCapitolLights/
+https://obtill199.github.io/AirCapitalLights/
 
 ## Turn on the site (once)
 
