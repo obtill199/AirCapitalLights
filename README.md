@@ -33,16 +33,15 @@ Prices live in two places in `index.html`: the price table near the top and the
 
 ## Offer and image
 
-One-story supplied-light packages have visible footage limits. Two-story homes,
+One-story supplied-light packages are priced on the site; footage limits
+(70 / 120 / 180 ft) are checked when quoting. Two-story homes,
 complex rooflines, and customer-owned lights receive a custom quote. One $20
 promotion applies per home per season. Supplied lights remain company property.
 
-The hero image in `assets/warm-white-roofline.jpg` was created with the built-in
-image generation tool and is labeled as an AI-generated example on the site.
-Prompt: Hyperrealistic wide architectural photograph of a modest single-story
-Wichita brick ranch at blue hour, warm-white C9 bulbs clipped evenly along the
-front roofline and gable, dormant autumn lawn, natural photographic textures
-and lighting, no people, cars, snow, logos, or text.
+The site no longer shows the AI-generated images in `assets/` (kept for reference).
+The hero is an inline SVG drawing of a one-story house whose bulbs switch between
+warm white, multicolor, and red & white with the color buttons and the form's
+color choice. Swap in a real photo of an install when you have one.
 
 The initial request asks for contact details and package preferences. Timing,
 referral source, neighbor details, and extras are confirmed during text follow-up.
@@ -53,8 +52,3 @@ Existing endpoint field names are preserved for compatibility.
 The request form offers warm white, multicolor, red and white, and help choosing.
 Color preference is prepended to the existing notes field, so the deployed
 Google Sheet/email endpoint records it without a redeployment or new column.
-
-The multicolor hero is an edit of the original generated image using the built-in
-image generation tool. Prompt: change roofline bulbs only to repeating red, green,
-blue, and amber C9 bulbs with realistic glow; preserve the house and blue-hour
-scene. The original warm-white image is retained in assets.

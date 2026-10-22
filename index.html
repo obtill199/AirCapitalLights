@@ -4,405 +4,281 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Air Capital Lights · Christmas Light Installation in Wichita</title>
-<meta name="description" content="Veteran-owned Christmas light installation in Wichita, KS. Flat prices from $249, January takedown included. Call or text (785) 214-8759.">
-<meta property="og:title" content="Air Capital Lights · We hang your Christmas lights">
-<meta property="og:description" content="Flat prices from $249, takedown included. Veteran-owned, Wichita KS. Request your install or text (785) 214-8759.">
+<meta name="description" content="Veteran-owned Christmas light installation in Wichita, KS. One-story homes from $249 for the season, January takedown included. Call or text (785) 214-8759.">
+<meta property="og:title" content="Air Capital Lights · I'll hang your Christmas lights">
+<meta property="og:description" content="One-story homes from $249 for the season, takedown included. Veteran-owned, Wichita KS. Text (785) 214-8759.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0B1A33">
+<meta name="theme-color" content="#0F1B33">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&family=Big+Shoulders+Display:wght@700;900&family=Caveat:wght@600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
 <style>
+  /* One family, two widths: wide and heavy for headings like truck lettering, normal for reading. Colors match the printed flyer. */
   :root {
-    --night: #0B1A33;
-    --night-2: #12264A;
-    --on-night: #FFFFFF;
-    --muted-night: #C9D3E3;
-    --amber: #F5B041;
-    --coral: #FF9A88;
+    --night: #0F1B33;
+    --night-2: #1B2A4A;
+    --ink: #14213D;
     --paper: #FFFFFF;
-    --mist: #F2F5F9;
-    --ink: #0E2240;
-    --grey: #4F5B6E;
-    --line: #D5DBE5;
+    --soft: #F3F5F8;
+    --line: #D6DCE5;
+    --muted: #4F5B6E;
+    --amber: #F5B041;
     --red: #B8322A;
-    --display: 'Big Shoulders Display', Impact, 'Arial Narrow', sans-serif;
-    --body: Archivo, 'Helvetica Neue', Arial, sans-serif;
-    color-scheme: light;
+    --red-dark: #962820;
+    --sans: Archivo, 'Helvetica Neue', Arial, sans-serif;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.55; }
-  .wrap { max-width: 1040px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left)); padding-right: max(20px, env(safe-area-inset-right)); }
-  h1, h2, h3 { font-family: var(--display); margin: 0; line-height: 1; text-wrap: balance; }
-  h2 { font-weight: 900; font-size: clamp(34px, 6vw, 52px); text-transform: uppercase; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 var(--sans); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left)); padding-right: max(20px, env(safe-area-inset-right)); }
+  h1, h2, h3 { margin: 0; font-weight: 800; font-stretch: 115%; line-height: 1.05; letter-spacing: -0.01em; text-wrap: balance; }
+  h2 { font-size: clamp(28px, 4.4vw, 40px); }
   p { margin: 0; }
   a { color: inherit; }
-  .label { font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
-  :focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+  :focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+  [hidden] { display: none !important; }
 
   /* Hero */
-  .hero { position: relative; background: var(--night); color: var(--on-night); padding-block: 104px 64px; overflow: hidden; }
-  .lights { position: absolute; top: 0; left: 0; width: 100%; height: 64px; display: block; }
-  .hero .wrap { display: grid; gap: 22px; }
-  .brand { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; }
-  .brand b { font-family: var(--display); font-weight: 900; font-size: 30px; letter-spacing: 0.06em; line-height: 1; }
-  .badge { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; color: var(--coral); border: 2px solid var(--coral); padding: 7px 10px; line-height: 1; }
-  .hero h1 { font-weight: 900; font-size: clamp(56px, 12vw, 116px); line-height: 0.9; text-transform: uppercase; }
-  .hero .sub { font-size: clamp(18px, 2.6vw, 24px); color: var(--muted-night); max-width: 40ch; }
-  .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px; }
-  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 22px; font: 800 17px/1 var(--body); letter-spacing: 0.04em; text-decoration: none; border-radius: 4px; border: 2px solid transparent; cursor: pointer; }
-  .btn-amber { background: var(--amber); color: var(--night); }
-  .btn-ghost { border-color: var(--muted-night); color: var(--on-night); }
-  .btn-ink { background: var(--ink); color: var(--paper); width: 100%; }
-  .btn:disabled { opacity: 0.6; cursor: progress; }
-  .hero .call { font-size: 15px; color: var(--muted-night); }
-  .hero .call a { color: var(--on-night); font-weight: 700; }
-  .promo { justify-self: start; background: var(--amber); color: var(--night); font-weight: 800; font-size: 16px; padding: 8px 14px; border-radius: 4px; }
+  .hero { background: var(--night); color: #FFFFFF; padding-block: 18px 56px; }
+  .topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-bottom: 18px; border-bottom: 1px solid #FFFFFF22; }
+  .logo { font-weight: 900; font-stretch: 125%; font-size: 20px; letter-spacing: 0.02em; text-decoration: none; }
+  .logo span { color: var(--amber); }
+  .top-phone { text-decoration: none; text-align: right; font-weight: 800; font-size: 17px; line-height: 1.2; }
+  .top-phone small { display: block; font-weight: 500; font-size: 12px; color: #C9D3E3; }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: center; padding-top: 48px; }
+  .hero h1 { font-size: clamp(40px, 6vw, 64px); }
+  .hero .lede { margin-top: 18px; font-size: 19px; color: #DCE3EE; max-width: 34ch; }
+  .from { margin-top: 18px; font-size: 18px; }
+  .from strong { color: var(--amber); font-size: 24px; font-stretch: 112%; }
+  .early { margin-top: 6px; font-size: 15px; color: #F7D89E; font-weight: 700; }
+  .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 22px; border-radius: 6px; border: 2px solid transparent; font: 800 16px/1 var(--sans); text-decoration: none; cursor: pointer; }
+  .btn-red { background: var(--red); color: #FFFFFF; }
+  .btn-red:hover { background: var(--red-dark); }
+  .btn-line { border-color: #FFFFFF66; color: #FFFFFF; }
+  .btn-line:hover { border-color: #FFFFFF; }
+  .meta { margin-top: 22px; font-size: 14px; color: #C9D3E3; }
 
-  .hero-photo { margin: 10px 0 0; }
-  .hero-photo img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; }
-  .hero-photo figcaption { color: var(--muted-night); font-size: 12px; margin-top: 8px; }
-  .details { border-top: 1px solid var(--line); padding-top: 18px; }
-  .details summary { cursor: pointer; font-weight: 700; }
-  .details p { margin-top: 10px; }
-  @media (max-width: 520px) {
-    .hero { padding-top: 88px; }
-    .hero h1 { font-size: clamp(50px, 13vw, 68px); }
-    .grid2 { grid-template-columns: minmax(0, 1fr); }
-    .ctas .btn { width: 100%; }
-  }
+  .house { width: 100%; height: auto; display: block; --c1: #FFD27A; --c2: #FFD27A; --c3: #FFD27A; --c4: #FFD27A; }
+  .house[data-scheme="multi"] { --c1: #FF5A4E; --c2: #4CC26B; --c3: #FFC145; --c4: #5B9BFF; }
+  .house[data-scheme="redwhite"] { --c1: #FF5A4E; --c2: #FFF4E0; --c3: #FF5A4E; --c4: #FFF4E0; }
+  .house .b { fill: currentColor; filter: drop-shadow(0 0 4px currentColor); }
+  .house .b1 { color: var(--c1); } .house .b2 { color: var(--c2); } .house .b3 { color: var(--c3); } .house .b4 { color: var(--c4); }
+  .try { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 14px; font-size: 14px; color: #C9D3E3; }
+  .try button { font: 700 14px/1 var(--sans); min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid #FFFFFF44; background: transparent; color: #FFFFFF; cursor: pointer; }
+  .try button[aria-pressed="true"] { background: #FFFFFF; color: var(--night); border-color: #FFFFFF; }
 
-  @media (min-width: 900px) {
-    .hero .wrap { grid-template-columns: 1fr 1fr; column-gap: 32px; }
-    .hero .brand { grid-column: 1 / -1; margin-bottom: 12px; }
-    .hero h1 { font-size: 76px; }
-    .hero .sub { font-size: 20px; }
-    .hero h1, .hero .sub, .hero .promo, .hero .ctas, .hero .call { grid-column: 1; }
-    .hero-photo { grid-column: 2; grid-row: 2 / 7; align-self: center; margin: 0; }
-    .hero-photo img { aspect-ratio: 4 / 3; }
-  }
-
-  /* Prices */
+  /* Sections */
   .section { padding-block: 64px; }
-  .section .wrap { display: grid; gap: 22px; }
-  .prices { width: 100%; border-collapse: collapse; border-top: 3px solid var(--ink); font-variant-numeric: tabular-nums; }
-  .prices th { text-align: left; padding: 12px 8px 10px 0; border-bottom: 2px solid var(--ink); }
-  .prices td { padding: 14px 8px 14px 0; border-bottom: 1px solid var(--line); vertical-align: middle; }
-  .prices .pkg { font-family: var(--display); font-weight: 700; font-size: clamp(22px, 4vw, 30px); line-height: 1; display: block; }
-  .prices .desc { display: block; margin-top: 4px; font-size: 13px; line-height: 1.35; color: var(--grey); }
-  .prices .amt { font-family: var(--display); font-weight: 900; font-size: clamp(32px, 6vw, 48px); line-height: 1; display: block; }
-  .prices .own { display: block; margin-top: 4px; font-size: 13px; line-height: 1.35; color: var(--grey); }
-  .prices .quote { font-family: var(--display); font-weight: 700; font-size: clamp(20px, 4vw, 28px); }
-  .fine { font-size: 14px; color: var(--grey); max-width: 70ch; }
+  .section.soft { background: var(--soft); }
+  .narrow { max-width: 680px; }
+  .section h2 + p { margin-top: 12px; color: var(--muted); }
 
-  .includes { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px 28px; }
-  .includes div { display: flex; gap: 10px; align-items: flex-start; }
-  .includes svg { flex: none; margin-top: 4px; }
-  .extras { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px 28px; border-top: 1px solid var(--line); padding-top: 20px; }
-  .extras .label { color: var(--red); display: block; margin-bottom: 4px; }
+  .prices { list-style: none; margin: 28px 0 0; padding: 0; border-top: 2px solid var(--ink); }
+  .prices a { display: flex; align-items: baseline; gap: 10px; padding: 16px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
+  .prices a:hover .name { text-decoration: underline; text-underline-offset: 4px; }
+  .prices .name { font-weight: 800; font-stretch: 110%; font-size: 21px; line-height: 1.25; }
+  .prices .name small { display: block; font-weight: 400; font-stretch: 100%; font-size: 14px; color: var(--muted); }
+  .prices .leader { flex: 1; border-bottom: 2px dotted #AEB8C7; transform: translateY(-6px); min-width: 24px; }
+  .prices .amt { font-weight: 900; font-stretch: 112%; font-size: 30px; font-variant-numeric: tabular-nums; }
+  .quote-note { margin-top: 18px; font-size: 17px; }
+  .coupon { margin-top: 24px; border: 2px dashed var(--red); border-radius: 6px; padding: 14px 18px; font-size: 16px; }
+  .coupon strong { color: var(--red); font-stretch: 112%; font-size: 19px; }
+  .fine { margin-top: 16px; font-size: 14px; color: var(--muted); }
 
-  /* Booking */
-  .book { background: var(--mist); }
-  form { display: grid; gap: 22px; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: clamp(18px, 4vw, 32px); }
-  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px 20px; }
-  .field { display: grid; gap: 6px; min-width: 0; }
-  .field > label, legend { font-size: 14px; font-weight: 700; }
-  .opt { font-weight: 400; color: var(--grey); }
-  input[type="text"], input[type="tel"], input[type="email"], select, textarea {
-    font: inherit; width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid #AEB8C7; border-radius: 6px; background: var(--paper); color: var(--ink);
-  }
-  textarea { min-height: 88px; resize: vertical; }
+  .included { margin: 24px 0 0; padding-left: 1.2em; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 32px; }
+  .letter { margin-top: 20px; font-size: 18px; display: grid; gap: 14px; }
+  .sig { font-weight: 800; font-stretch: 112%; }
+
+  .faq { margin-top: 20px; border-top: 1px solid var(--line); }
+  .faq details { border-bottom: 1px solid var(--line); padding: 14px 0; }
+  .faq summary { cursor: pointer; font-weight: 700; font-size: 17px; }
+  .faq details p { margin-top: 8px; color: var(--muted); }
+
+  /* Booking form */
+  form { margin-top: 28px; display: grid; gap: 22px; }
+  .field { display: grid; gap: 6px; }
+  .field > label, legend { font-size: 15px; font-weight: 700; }
+  .opt { font-weight: 400; color: var(--muted); }
+  input[type="text"], input[type="tel"], textarea { font: inherit; width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid #AEB8C7; border-radius: 6px; background: var(--paper); color: var(--ink); }
+  textarea { min-height: 96px; resize: vertical; }
   fieldset { border: 0; margin: 0; padding: 0; display: grid; gap: 8px; min-width: 0; }
   .choices { display: flex; flex-wrap: wrap; gap: 8px; }
   .choice { position: relative; }
   .choice input { position: absolute; opacity: 0; width: 1px; height: 1px; }
-  .choice span { display: inline-flex; align-items: center; min-height: 46px; padding: 0 16px; border: 1px solid #AEB8C7; border-radius: 999px; cursor: pointer; font-size: 16px; background: var(--paper); }
-  .choice input:checked + span { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .choice span { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid #AEB8C7; border-radius: 6px; background: var(--paper); cursor: pointer; font-size: 15px; }
+  .choice input:checked + span { background: var(--ink); border-color: var(--ink); color: #FFFFFF; }
   .choice input:focus-visible + span { outline: 3px solid var(--amber); outline-offset: 2px; }
-  .estimate { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px; background: var(--night); color: var(--on-night); border-radius: 6px; padding: 16px 20px; }
-  .estimate b { font-family: var(--display); font-weight: 900; font-size: clamp(28px, 5vw, 40px); color: var(--amber); line-height: 1; }
-  .estimate small { color: var(--muted-night); font-size: 14px; }
+  .estimate { border: 2px solid var(--ink); border-radius: 6px; padding: 14px 18px; display: grid; gap: 4px; }
+  .estimate .label { font-size: 14px; font-weight: 700; color: var(--muted); }
+  .estimate b { font-weight: 900; font-stretch: 112%; font-size: 30px; line-height: 1.1; }
+  .estimate small { font-size: 13px; color: var(--muted); }
   .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
-  .status { font-size: 15px; color: var(--grey); min-height: 1.4em; }
-  .done { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: clamp(18px, 4vw, 32px); display: grid; gap: 12px; }
-  .done h3 { font-weight: 900; font-size: 40px; text-transform: uppercase; }
-  [hidden] { display: none !important; }
-
-  footer { background: var(--night); color: var(--muted-night); padding-block: 40px; font-size: 15px; }
-  footer .wrap { display: grid; gap: 10px; }
-  footer b { font-family: var(--display); font-weight: 900; font-size: 26px; letter-spacing: 0.06em; color: var(--on-night); }
-  footer a { color: var(--on-night); font-weight: 700; }
-
-  :root { --paper: #FFFEFB; --mist: #F4F1EA; --ink: #13243A; --night: #101E30; --amber: #F0BE68; --line: #DEDCD4; }
-  html { scroll-behavior: smooth; scroll-padding-top: 24px; }
-  body { font-size: 16px; }
-  .wrap { max-width: 1220px; padding-inline: 32px; }
-  .hero { padding: 0 0 54px; }
-  .lights { display: none; }
-  .hero .wrap { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 44px; align-items: center; }
-  .hero .brand { grid-column: 1 / -1; display: flex; padding: 28px 0 24px; margin: 0; border-bottom: 1px solid #FFFFFF24; }
-  .wordmark { font-family: var(--display); font-size: 26px; font-weight: 900; letter-spacing: .035em; text-decoration: none; }
-  .wordmark span { color: var(--amber); }
-  .nav-links { display: flex; align-items: center; gap: 28px; font-size: 13px; font-weight: 600; }
-  .nav-links a { text-decoration: none; }
-  .nav-links a:last-child { color: var(--amber); }
-  .hero-copy { display: grid; gap: 24px; }
-  .eyebrow { font-size: 11px; letter-spacing: .14em; font-weight: 800; line-height: 1.6; }
-  .hero .eyebrow { color: var(--amber); }
-  .hero h1 { font-size: clamp(62px, 6vw, 80px); line-height: .99; text-transform: none; text-wrap: initial; letter-spacing: -.025em; }
-  .hero h1 em { font-style: normal; color: var(--amber); }
-  .hero .sub { font-size: 18px; line-height: 1.75; max-width: 37ch; }
-  .promo { background: transparent; color: var(--amber); font-size: 13px; padding: 0; border-radius: 0; }
-  .promo::before { content: '✦'; margin-right: 8px; }
-  .ctas { gap: 10px; margin: 0; }
-  .btn { font-size: 14px; letter-spacing: 0; border-radius: 5px; padding-inline: 18px; min-height: 50px; transition: background .18s ease, transform .18s ease; }
-  .btn-ghost { border-color: #FFFFFF40; }
-  .btn:hover, .package-link:hover { transform: translateY(-2px); }
-  .btn-amber:hover { background: #FFD28A; }
-  .hero .call { font-size: 12px; line-height: 1.7; max-width: 49ch; }
-  .hero-photo { grid-column: 2; grid-row: auto; margin: 0; align-self: center; }
-  .hero-photo img { aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; }
-  .hero-photo figcaption { font-size: 10px; line-height: 1.6; color: #AAB7C9; padding-top: 3px; }
-  .section { padding-block: 80px; }
-  .section .wrap { gap: 28px; }
-  .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; }
-  .section-heading .eyebrow, .book-intro .eyebrow { color: #7B5B2D; margin-bottom: 14px; }
-  h2 { text-transform: none; letter-spacing: -.015em; font-size: clamp(40px, 5vw, 58px); }
-  .section-heading > p { font-size: 14px; color: var(--grey); line-height: 1.7; }
-  .package-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-  .package-card { padding: 28px 24px 22px; background: #F7F5F0; border: 1px solid var(--line); border-radius: 6px; }
-  .package-number { font-size: 10px; font-weight: 800; letter-spacing: .1em; color: #725D3E; margin-bottom: 28px; }
-  .package-card h3 { font-size: 34px; font-weight: 900; }
-  .package-scope { font-size: 13px; color: var(--grey); margin-top: 10px; min-height: 42px; }
-  .package-price { font-size: 52px; letter-spacing: -.06em; font-weight: 700; line-height: 1.2; margin-top: 20px; }
-  .package-price span { font-size: 12px; letter-spacing: 0; font-weight: 400; color: var(--grey); }
-  .package-length { font-size: 12px; margin-top: 8px; color: var(--grey); }
-  .package-link { display: flex; align-items: center; justify-content: space-between; gap: 8px; border-top: 1px solid var(--line); padding-top: 18px; margin-top: 28px; font-size: 12px; font-weight: 700; text-decoration: none; transition: transform .18s; min-height: 44px; }
-  .featured { background: var(--night); color: white; border-color: var(--night); }
-  .featured .package-number { color: var(--amber); }
-  .featured .package-scope, .featured .package-length, .featured .package-price span { color: var(--muted-night); }
-  .featured .package-link { border-color: #FFFFFF30; color: var(--amber); }
-  .includes { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding-block: 24px; gap: 20px; font-size: 13px; }
-  .extras { border: 0; padding: 0; font-size: 14px; gap: 28px; }
-  .extras .label { font-size: 10px; color: #725D3E; margin-bottom: 9px; }
-  .details { font-size: 14px; }
-  .book .wrap { grid-template-columns: .7fr 1.3fr; gap: 48px; align-items: start; }
-  .book-intro { position: sticky; top: 32px; display: grid; gap: 22px; padding-top: 10px; }
-  .book-intro .eyebrow { margin: 0; }
-  .book-intro > p:not(.eyebrow) { font-size: 15px; line-height: 1.8; color: var(--grey); }
-  .book-intro .book-assurance { border-top: 1px solid #D4D0C6; padding-top: 22px; font-weight: 700; color: var(--ink); }
-  .book-text { font-size: 13px; font-weight: 700; text-underline-offset: 5px; }
-  form { padding: 28px; border: 1px solid #E0DCD3; border-radius: 8px; gap: 24px; }
-  .grid2 { grid-template-columns: 1fr 1fr; }
-  .grid2 .field:last-child { grid-column: 1 / -1; }
-  .choice span { font-size: 13px; padding-inline: 13px; border-radius: 5px; line-height: 1.45; }
-  .choices { gap: 8px; }
-  .estimate { display: grid; gap: 10px; padding: 20px; }
-  .estimate .label { font-size: 10px; }
-  .estimate b { font-size: 34px; }
-  .estimate small { font-size: 12px; line-height: 1.6; }
+  .btn-submit { background: var(--red); color: #FFFFFF; width: 100%; }
+  .btn-submit:hover { background: var(--red-dark); }
+  .btn:disabled { opacity: 0.6; cursor: progress; }
+  .status { font-size: 15px; color: var(--muted); }
   .status:empty { display: none; }
-  .done { grid-column: 2; }
-  footer { padding-block: 32px; }
-  footer .wrap { font-size: 12px; }
-  a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, summary:focus-visible { outline: 3px solid #B56D00; outline-offset: 4px; }
-  @media (max-width: 899px) {
-    .hero .wrap { grid-template-columns: 1fr; gap: 28px; }
-    .hero-copy { gap: 18px; }
-    .hero h1 { font-size: 74px; }
-    .hero .sub { max-width: 50ch; }
-    .hero-photo { grid-column: 1; }
-    .hero-photo img { aspect-ratio: 16 / 9; }
-    .hero .brand { margin-bottom: 0; }
-    .book .wrap { grid-template-columns: 1fr; gap: 32px; }
-    .book-intro { position: static; }
-    .done { grid-column: 1; }
-    .package-card { padding-inline: 18px; }
-  }
-  @media (max-width: 600px) {
-    .wrap { padding-inline: 22px; }
-    .hero .brand { padding-block: 22px; gap: 14px; }
-    .wordmark { font-size: 23px; }
-    .nav-links { gap: 12px; font-size: 12px; }
-    .nav-links a:first-child { display: none; }
-    .hero h1 { font-size: 54px; }
-    .hero .sub { font-size: 16px; }
-    .hero .eyebrow { font-size: 10px; }
-    .hero .ctas .btn { width: auto; flex: 1; padding-inline: 12px; font-size: 12px; }
-    .hero-photo img { aspect-ratio: 16 / 10; }
-    .hero { padding-bottom: 32px; }
-    .section { padding-block: 48px; }
-    .section-heading { display: block; }
-    .section-heading > p { margin-top: 16px; }
-    .package-grid { grid-template-columns: 1fr; }
-    .package-card { padding: 24px; }
-    .package-number { margin-bottom: 18px; }
-    .package-scope { min-height: 0; }
-    .package-price { margin-top: 16px; }
-    .package-link { margin-top: 20px; }
-    .includes { grid-template-columns: 1fr; }
-    .extras { grid-template-columns: 1fr; }
-    form { padding: 20px; }
-    .grid2 { grid-template-columns: 1fr; }
-    .choice span { min-height: 46px; }
-    .book .wrap { gap: 28px; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    .btn, .package-link { transition: none; }
-    .btn:hover, .package-link:hover { transform: none; }
-  }
+  .done { margin-top: 28px; border: 2px solid var(--ink); border-radius: 6px; padding: 22px; display: grid; gap: 10px; }
+  .done h3 { font-size: 28px; }
 
+  footer { background: var(--night); color: #C9D3E3; padding-block: 32px; font-size: 15px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; }
+  footer b { color: #FFFFFF; font-stretch: 115%; }
+  footer a { color: #FFFFFF; font-weight: 700; }
 
-  /* Christmas: evergreen, cranberry, warm light, and a handwritten greeting. */
-  :root { --night: #102E28; --night-2: #173E34; --ink: #173A30; --amber: #F1C577; --mist: #F5F1E7; --paper: #FFFCF6; --muted-night: #D9E6DE; }
-  .hero { padding-top: 46px; background: radial-gradient(ellipse at 80% 50%, #294538 0, #102E28 64%); }
-  .lights { display: block; height: 64px; opacity: .95; pointer-events: none; }
-  .lights .bulb-red path { fill: #EF7B71; }
-  .lights .bulb-red circle { fill: #EF7B71; }
-  .lights .bulb-green path { fill: #91BA92; }
-  .lights .bulb-green circle { fill: #91BA92; }
-  .hero .brand { border-color: #D8D9BA30; }
-  .hero h1 { font-size: clamp(56px, 5.2vw, 75px); line-height: 1.05; }
-  .hero h1 em { font-family: Caveat, cursive; font-weight: 700; font-size: 1.24em; letter-spacing: -.04em; line-height: 1; }
-  .hero .sub { font-size: 16px; line-height: 1.8; }
-  .hero-photo { position: relative; }
-  .hero-photo img { border: 1px solid #F1C57744; box-shadow: 0 18px 70px #00000030; }
-  .photo-label { display: inline-block; position: absolute; z-index: 1; top: -13px; left: 18px; padding: 7px 12px; border: 1px solid #DDBE8D; background: #F5EBD6; color: #264135; font-size: 9px; font-weight: 800; letter-spacing: .12em; }
-  .btn-amber { background: #A83F3F; color: #FFF8ED; border-color: #C77868; }
-  .btn-amber:hover { background: #BB4A48; }
-  .promo { color: #F7D89E; }
-  .section-heading .eyebrow, .book-intro .eyebrow { color: #963B39; }
-  .section-heading h2 { max-width: 16ch; }
-  .package-card { background: #F6F1E7; border-color: #DDD5C5; }
-  .package-number { color: #8D3737; }
-  .package-card.featured { background: #173A30; color: #FFF8EA; border-color: #173A30; }
-  .package-link { color: #8C3435; }
-  .featured .package-link { color: var(--amber); }
-  .includes svg path { stroke: #8D3737; }
-  .book { border-top: 1px solid #DDD5C5; }
-  .book-intro h2 { line-height: 1.08; }
-  .extras .label { color: #8D3737; }
-  footer { border-top: 3px solid #A64741; }
-  @media (max-width: 899px) {
-    .hero h1 { font-size: 70px; }
-    .hero-photo { margin-top: 12px; }
+  @media (max-width: 820px) {
+    .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; padding-top: 32px; }
+    .included { grid-template-columns: minmax(0, 1fr); }
   }
-  @media (max-width: 600px) {
-    .hero { padding-top: 40px; }
-    .hero h1 { font-size: 47px; }
-    .hero .sub { font-size: 15px; }
-    .hero-copy { gap: 18px; }
-    .photo-label { font-size: 8px; left: 12px; }
-    .section-heading h2 { font-size: 43px; }
+  @media (max-width: 480px) {
+    .top-phone small { display: none; }
+    .logo { font-size: 17px; }
+    .ctas .btn { flex: 1 1 100%; }
+    .prices .name { font-size: 19px; }
+    .prices .amt { font-size: 26px; }
   }
-
-  .color-intro { font-size: 14px; line-height: 1.8; max-width: 82ch; }
-  .color-swatch { display: inline-block; flex: none; width: 7px; height: 7px; border-radius: 50%; margin-right: 24px; background: #F4D49A; box-shadow: 9px 0 #F4D49A, 18px 0 #F4D49A; border: 1px solid #0002; }
-  .color-swatch.multi { background: #DC4248; box-shadow: 9px 0 #3F9C5D, 18px 0 #4284D9; }
-  .color-swatch.red-white { background: #DC4248; box-shadow: 9px 0 #E4D9C1, 18px 0 #DC4248; }
-  .color-choices + .fine { font-size: 12px; }
-  .from-price { font-size: 15px; color: var(--on-night); }
-  .from-price strong { color: var(--amber); font-size: 19px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 </style>
 </head>
 <body>
 
-<header class="hero">
-  <svg class="lights" aria-hidden="true">
-    <defs>
-      <pattern id="strand" width="204" height="64" patternUnits="userSpaceOnUse">
-        <path d="M0 6 Q102 46 204 6" fill="none" stroke="#3D6B57" stroke-width="2.5"/>
-        <g class="bulb-red" transform="translate(51 21)"><circle cx="0" cy="18" r="13" fill="#F5B041" opacity="0.22"/><rect x="-4" y="0" width="8" height="7" rx="1.5" fill="#3D6B57"/><path d="M-6 7 C-7.5 15 -3 22 0 27 C3 22 7.5 15 6 7 Z" fill="#F5B041"/></g>
-        <g class="bulb-gold" transform="translate(102 26)"><circle cx="0" cy="18" r="13" fill="#F5B041" opacity="0.22"/><rect x="-4" y="0" width="8" height="7" rx="1.5" fill="#3D6B57"/><path d="M-6 7 C-7.5 15 -3 22 0 27 C3 22 7.5 15 6 7 Z" fill="#F5B041"/></g>
-        <g class="bulb-green" transform="translate(153 21)"><circle cx="0" cy="18" r="13" fill="#F5B041" opacity="0.22"/><rect x="-4" y="0" width="8" height="7" rx="1.5" fill="#3D6B57"/><path d="M-6 7 C-7.5 15 -3 22 0 27 C3 22 7.5 15 6 7 Z" fill="#F5B041"/></g>
-      </pattern>
-    </defs>
-    <rect width="100%" height="64" fill="url(#strand)"/>
-  </svg>
+<header class="hero" id="top">
   <div class="wrap">
-    <nav class="brand" aria-label="Main navigation"><a class="wordmark" href="#">AIR CAPITAL <span>LIGHTS</span></a><div class="nav-links"><a href="#prices">Packages</a><a href="#book">Request an install <span aria-hidden="true">↓</span></a></div></nav>
-    <div class="hero-copy"><p class="eyebrow">VETERAN-OWNED · CHRISTMAS LIGHTS · WICHITA</p><h1>Make home feel<br>like <em>Christmas.</em></h1>
-    <p class="sub">A warm welcome from the street. Christmas lights in your favorite colors, hung for you and taken down in January. All you have to do is enjoy them.</p>
-    <p class="from-price">One-story homes from <strong>$249</strong> a season, takedown included.</p>
-    <p class="promo" data-early>Early bird: book by Nov 8 and save $20</p>
-    <div class="ctas">
-      <a class="btn btn-amber" href="#book">Request my install</a>
-      <a class="btn btn-ghost" href="sms:+17852148759">Text (785) 214-8759</a>
+    <div class="topbar">
+      <a class="logo" href="#top">AIR CAPITAL <span>LIGHTS</span></a>
+      <a class="top-phone" href="tel:+17852148759"><small>Call or text</small>(785) 214-8759</a>
     </div>
-    <p class="call">Rather talk? Call <a href="tel:+17852148759">(785) 214-8759</a>.</p>
+
+    <div class="hero-grid">
+      <div>
+        <h1>I’ll hang your Christmas lights.</h1>
+        <p class="lede">Up before Thanksgiving, fixed within 48 hours if anything goes out, and taken down in January. You stay off the ladder.</p>
+        <p class="from">One-story homes from <strong>$249</strong> for the season, LED lights included.</p>
+        <p class="early" data-early>Book by Nov 8 and save $20.</p>
+        <div class="ctas">
+          <a class="btn btn-red" href="#book">Get a free quote</a>
+          <a class="btn btn-line" href="sms:+17852148759">Text (785) 214-8759</a>
+        </div>
+        <p class="meta">Veteran-owned · Wichita, KS · Installing Nov&nbsp;9&nbsp;–&nbsp;Dec&nbsp;15</p>
+      </div>
+
+      <div>
+        <svg class="house" id="house" data-scheme="warm" viewBox="0 0 480 300" role="img" aria-label="Drawing of a one-story house with Christmas lights along the roofline">
+          <rect x="0" y="250" width="480" height="50" fill="#13233F"/>
+          <polygon points="40,152 120,95 360,95 440,152" fill="#2E3E62"/>
+          <rect x="60" y="152" width="360" height="98" fill="#22314F"/>
+          <rect x="300" y="182" width="100" height="68" fill="#1A2742"/>
+          <line x1="300" y1="199" x2="400" y2="199" stroke="#22314F" stroke-width="2"/>
+          <line x1="300" y1="216" x2="400" y2="216" stroke="#22314F" stroke-width="2"/>
+          <line x1="300" y1="233" x2="400" y2="233" stroke="#22314F" stroke-width="2"/>
+          <rect x="88" y="176" width="58" height="36" fill="#F6C66B" opacity="0.85"/>
+          <rect x="166" y="176" width="42" height="36" fill="#F6C66B" opacity="0.85"/>
+          <rect x="232" y="186" width="32" height="64" fill="#142038"/>
+          <circle cx="274" cy="192" r="3" fill="#FFD27A"/>
+          <ellipse cx="78" cy="252" rx="30" ry="13" fill="#1D3A33"/>
+          <ellipse cx="226" cy="254" rx="22" ry="10" fill="#1D3A33"/>
+          <ellipse cx="438" cy="252" rx="28" ry="12" fill="#1D3A33"/>
+          <polyline points="40,152 120,95 360,95 440,152" fill="none" stroke="#0B1324" stroke-width="2"/>
+          <line x1="40" y1="152" x2="440" y2="152" stroke="#0B1324" stroke-width="2"/>
+          <g>
+            <circle class="b b1" cx="40" cy="156" r="4.5"/><circle class="b b2" cx="60" cy="156" r="4.5"/><circle class="b b3" cx="80" cy="156" r="4.5"/><circle class="b b4" cx="100" cy="156" r="4.5"/>
+            <circle class="b b1" cx="120" cy="156" r="4.5"/><circle class="b b2" cx="140" cy="156" r="4.5"/><circle class="b b3" cx="160" cy="156" r="4.5"/><circle class="b b4" cx="180" cy="156" r="4.5"/>
+            <circle class="b b1" cx="200" cy="156" r="4.5"/><circle class="b b2" cx="220" cy="156" r="4.5"/><circle class="b b3" cx="240" cy="156" r="4.5"/><circle class="b b4" cx="260" cy="156" r="4.5"/>
+            <circle class="b b1" cx="280" cy="156" r="4.5"/><circle class="b b2" cx="300" cy="156" r="4.5"/><circle class="b b3" cx="320" cy="156" r="4.5"/><circle class="b b4" cx="340" cy="156" r="4.5"/>
+            <circle class="b b1" cx="360" cy="156" r="4.5"/><circle class="b b2" cx="380" cy="156" r="4.5"/><circle class="b b3" cx="400" cy="156" r="4.5"/><circle class="b b4" cx="420" cy="156" r="4.5"/>
+            <circle class="b b1" cx="440" cy="156" r="4.5"/>
+            <circle class="b b2" cx="56" cy="144.6" r="4.5"/><circle class="b b3" cx="72" cy="133.2" r="4.5"/><circle class="b b4" cx="88" cy="121.8" r="4.5"/><circle class="b b1" cx="104" cy="110.4" r="4.5"/><circle class="b b2" cx="120" cy="99" r="4.5"/>
+            <circle class="b b3" cx="140" cy="99" r="4.5"/><circle class="b b4" cx="160" cy="99" r="4.5"/><circle class="b b1" cx="180" cy="99" r="4.5"/><circle class="b b2" cx="200" cy="99" r="4.5"/><circle class="b b3" cx="220" cy="99" r="4.5"/><circle class="b b4" cx="240" cy="99" r="4.5"/>
+            <circle class="b b1" cx="260" cy="99" r="4.5"/><circle class="b b2" cx="280" cy="99" r="4.5"/><circle class="b b3" cx="300" cy="99" r="4.5"/><circle class="b b4" cx="320" cy="99" r="4.5"/><circle class="b b1" cx="340" cy="99" r="4.5"/>
+            <circle class="b b2" cx="360" cy="99" r="4.5"/><circle class="b b3" cx="376" cy="110.4" r="4.5"/><circle class="b b4" cx="392" cy="121.8" r="4.5"/><circle class="b b1" cx="408" cy="133.2" r="4.5"/><circle class="b b2" cx="424" cy="144.6" r="4.5"/>
+          </g>
+        </svg>
+        <div class="try" role="group" aria-label="Preview light colors">
+          <span>Try a color:</span>
+          <button type="button" data-scheme-btn="warm" aria-pressed="true">Warm white</button>
+          <button type="button" data-scheme-btn="multi" aria-pressed="false">Multicolor</button>
+          <button type="button" data-scheme-btn="redwhite" aria-pressed="false">Red &amp; white</button>
+        </div>
+      </div>
     </div>
-    <figure class="hero-photo"><span class="photo-label">YOUR COLORS. YOUR CHRISTMAS.</span>
-      <img src="assets/multicolor-roofline.jpg" width="1672" height="941" alt="Illustration of a one-story brick home at dusk with red, green, blue, and amber Christmas bulbs outlining the front roofline" fetchpriority="high">
-      <figcaption>AI-generated example of a multicolor roofline display. Actual coverage depends on your home and package.</figcaption>
-    </figure>
   </div>
 </header>
 
 <main>
   <section class="section" id="prices" aria-labelledby="prices-h">
-    <div class="wrap">
-      <div class="section-heading"><div><p class="eyebrow">CHRISTMAS CHEER, FROM THE CURB TO YOUR DOOR.</p><h2 id="prices-h">Find your Christmas glow.</h2></div><p>Simple seasonal packages.<br>One price, from install to takedown.</p></div>
-      <p>Every one-story package includes commercial-grade C9 LEDs in your choice of colors, a timer, installation, seasonal service, January takedown, and storage.</p>
-      <p class="color-intro"><strong>Your Christmas, your colors.</strong> Choose warm white, festive multicolor, or classic red &amp; white. Have another combination in mind? Tell us when you request your install; we’ll confirm availability with your quote.</p>
-      <div class="package-grid">
-        <article class="package-card"><p class="package-number">01 / THE CLASSIC</p><h3>Front roofline</h3><p class="package-scope">A classic Christmas welcome.</p><p class="package-price">$249<span> / season</span></p><p class="package-length">One story · fits most fronts (up to 70 ft)</p><a href="#book" class="package-link" data-package="Front roofline">Choose front roofline <span aria-hidden="true">↓</span></a></article>
-        <article class="package-card featured"><p class="package-number">02 / A LITTLE MORE GLOW</p><h3>Front + sides</h3><p class="package-scope">Carry the Christmas glow around the corners.</p><p class="package-price">$399<span> / season</span></p><p class="package-length">One story · fits most homes (up to 120 ft)</p><a href="#book" class="package-link" data-package="Front + sides">Choose front + sides <span aria-hidden="true">↓</span></a></article>
-        <article class="package-card"><p class="package-number">03 / ALL THE WAY AROUND</p><h3>Whole house</h3><p class="package-scope">Christmas cheer from every angle.</p><p class="package-price">$549<span> / season</span></p><p class="package-length">One story · fits most homes (up to 180 ft)</p><a href="#book" class="package-link" data-package="Whole house">Choose whole house <span aria-hidden="true">↓</span></a></article>
-      </div>
-      <p class="fine">For accessible one-story rooflines. We confirm measurements and access before you pay. Longer rooflines, complex peaks, and two-story homes receive a custom quote. Plus applicable Kansas sales tax. Installs booked after Dec 1 add $50.</p>
-      <p><strong>Already own lights?</strong> We can quote installation and takedown after checking your strands and roofline. Customer-owned lights are quoted separately.</p>
-
-      <div class="includes" role="list">
-        <div role="listitem"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#B8322A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Plastic clips only. No nails or staples.</span></div>
-        <div role="listitem"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#B8322A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Air Capital Lights LEDs: any bulb or install problem fixed within 48 hours, weather permitting.</span></div>
-        <div role="listitem"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#B8322A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Takedown Jan 4–24. You don't need to be home.</span></div>
-        <div role="listitem"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#B8322A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A seasonal lighting service: we own the LEDs, take them down, and store them between seasons.</span></div>
-      </div>
-
-      <div class="extras">
-        <p><span class="label">Anything else to light?</span>Shrubs, trees, walkways and wreaths get a free quote. Mention them in your request or when we text you.</p>
-        <p><span class="label">Save $20</span><span data-early>Book by Nov 8, or book with a neighbor on your street. One $20 discount per home.</span><span data-late hidden>Book with a neighbor on your street. One $20 discount per home.</span></p>
-        <p><span class="label">How payment works</span>A 50% deposit holds your install date. The rest is due on install day. No January bill.</p>
-      </div>
-      <details class="details">
-        <summary>Lights, service, and next season</summary>
-        <p>Air Capital Lights retains ownership of supplied lights and equipment. Your price covers one holiday season. Rebooking is optional and priced separately; if you do not rebook, the lights stay with us.</p>
-        <p>Included service covers faults in Air Capital Lights LEDs and their installation. Storm damage, power or outlet problems, and changes after installation are assessed separately; any extra charge is agreed before work. If weather makes access unsafe, we arrange the next safe service time.</p>
-        <p>For customer-owned lights, we check condition before quoting. Replacement strands and bulbs cost extra. The 48-hour bulb replacement coverage applies to Air Capital Lights LEDs.</p>
-      </details>
+    <div class="wrap narrow">
+      <h2 id="prices-h">Prices for one-story homes</h2>
+      <p>One price for the whole season: LED lights, a timer, install, any fix within 48 hours, January takedown and storage.</p>
+      <ul class="prices">
+        <li><a href="#book" data-package="Front roofline"><span class="name">Front roofline <small>The side facing the street</small></span><span class="leader" aria-hidden="true"></span><span class="amt">$249</span></a></li>
+        <li><a href="#book" data-package="Front + sides"><span class="name">Front + sides <small>Front plus both sides</small></span><span class="leader" aria-hidden="true"></span><span class="amt">$399</span></a></li>
+        <li><a href="#book" data-package="Whole house"><span class="name">Whole house <small>Every side of the roofline</small></span><span class="leader" aria-hidden="true"></span><span class="amt">$549</span></a></li>
+      </ul>
+      <p class="quote-note"><strong>Two-story home, or using your own lights?</strong> I’ll measure and text you a free quote first.</p>
+      <p class="coupon"><strong>$20 off</strong> when you <span data-early>book by Nov 8, or when you </span>book with a neighbor on your street. One discount per home.</p>
+      <p class="fine">Colors: warm white, multicolor, or red &amp; white. Shrubs, trees, walkways and wreaths get a free quote. Prices fit most one-story homes; I confirm measurements before you pay. Plus Kansas sales tax. Installs booked after Dec 1 add $50.</p>
     </div>
   </section>
 
-  <section class="section book" id="book" aria-labelledby="book-h">
-    <div class="wrap">
-      <div class="book-intro"><p class="eyebrow">A MERRIER HOME STARTS HERE</p><h2 id="book-h">Let’s make<br>Christmas shine.</h2><p>Tell us a little about your home. Oliver will text you the same day to confirm your quote and an available date.</p><p class="book-assurance">No payment until you approve your quote.</p><a class="book-text" href="sms:+17852148759">Prefer to text? (785) 214-8759 ↗</a></div>
+  <section class="section soft" aria-labelledby="note-h">
+    <div class="wrap narrow">
+      <h2 id="note-h">A note from Oliver</h2>
+      <div class="letter">
+        <p>I’m a veteran, I live here in Wichita, and I started Air Capital Lights this fall so you don’t have to spend a cold Saturday on a ladder.</p>
+        <p>I use plastic clips, never nails or staples. I photograph your roofline before I start. If a bulb goes out, text me and I’ll be back within 48 hours.</p>
+        <p class="sig">Oliver, Air Capital Lights · (785) 214-8759</p>
+      </div>
+      <ul class="included">
+        <li>Commercial-grade C9 LED bulbs</li>
+        <li>A timer, set up for you</li>
+        <li>Fixes within 48 hours, weather permitting</li>
+        <li>Takedown Jan 4–24, no need to be home</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq-h">
+    <div class="wrap narrow">
+      <h2 id="faq-h">Questions</h2>
+      <div class="faq">
+        <details><summary>Do I need to be home?</summary><p>No. I’ll text before I come. I just need an outdoor outlet I can reach.</p></details>
+        <details><summary>What if a bulb goes out?</summary><p>Text me. I’ll fix it within 48 hours, weather permitting. Storm damage or outlet problems get checked first, and I’ll tell you about any cost before I do the work.</p></details>
+        <details><summary>Who owns the lights?</summary><p>Air Capital Lights does. I take them down in January and store them. Your price covers one season, and rebooking next year is up to you.</p></details>
+        <details><summary>What about two-story homes, or lights I already own?</summary><p>Both get a free quote. I’ll look at your roofline (and your strands) and text you a price before you pay anything.</p></details>
+        <details><summary>How does payment work?</summary><p>A 50% deposit holds your install date. The rest is due on install day. Takedown is already included, so there’s no January bill.</p></details>
+        <details><summary>When do lights go up and come down?</summary><p>Installs run Nov 9 – Dec 15. Takedown is Jan 4–24.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft" id="book" aria-labelledby="book-h">
+    <div class="wrap narrow">
+      <h2 id="book-h">Get a free quote</h2>
+      <p>Tell me about your home and I’ll text you the same day with your price and an install date. Nothing is due until you say yes. Rather text? <a href="sms:+17852148759">(785) 214-8759</a></p>
 
       <form id="booking" novalidate>
-        <div class="grid2">
-          <div class="field"><label for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
-          <div class="field"><label for="phone">Mobile phone</label><input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" minlength="10" required></div>
-          <div class="field"><label for="address">Home address <span class="opt">(where the lights go)</span></label><input type="text" id="address" name="address" autocomplete="street-address" placeholder="Street, city, ZIP" required></div>
-        </div>
+        <div class="field"><label for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="phone">Mobile phone</label><input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" minlength="10" required></div>
+        <div class="field"><label for="address">Home address <span class="opt">(where the lights go)</span></label><input type="text" id="address" name="address" autocomplete="street-address" placeholder="Street, city, ZIP" required></div>
 
         <fieldset>
           <legend>Which lights?</legend>
           <div class="choices">
-            <label class="choice"><input type="radio" name="lights" value="Air Capital Lights LEDs" required checked><span>Air Capital Lights LEDs (we provide)</span></label>
-            <label class="choice"><input type="radio" name="lights" value="Customer-owned lights"><span>Customer-owned lights (custom quote)</span></label>
+            <label class="choice"><input type="radio" name="lights" value="Air Capital Lights LEDs" required checked><span>Air Capital Lights LEDs (included)</span></label>
+            <label class="choice"><input type="radio" name="lights" value="Customer-owned lights"><span>Customer-owned lights (free quote)</span></label>
             <label class="choice"><input type="radio" name="lights" value="Not sure"><span>Not sure</span></label>
           </div>
         </fieldset>
 
         <fieldset>
-          <legend>What colors do you like?</legend>
-          <div class="choices color-choices">
-            <label class="choice"><input type="radio" name="color" value="Warm white"><span><i class="color-swatch warm" aria-hidden="true"></i>Warm white</span></label>
-            <label class="choice"><input type="radio" name="color" value="Multicolor"><span><i class="color-swatch multi" aria-hidden="true"></i>Multicolor</span></label>
-            <label class="choice"><input type="radio" name="color" value="Red and white"><span><i class="color-swatch red-white" aria-hidden="true"></i>Red &amp; white</span></label>
+          <legend>Colors</legend>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="color" value="Warm white"><span>Warm white</span></label>
+            <label class="choice"><input type="radio" name="color" value="Multicolor"><span>Multicolor</span></label>
+            <label class="choice"><input type="radio" name="color" value="Red and white"><span>Red &amp; white</span></label>
             <label class="choice"><input type="radio" name="color" value="Help me choose" checked><span>Help me choose</span></label>
           </div>
-          <p class="fine">We’ll confirm colors and availability by text. Want a different combination? Add it in the notes below.</p>
         </fieldset>
 
         <fieldset>
@@ -425,24 +301,23 @@
         </fieldset>
 
         <div class="estimate" aria-live="polite">
-          <span class="label">Package estimate</span>
+          <span class="label">Your price</span>
           <b id="estimate">Pick your options</b>
           <small id="estimate-note">Plus Kansas sales tax. Confirmed by text before you pay anything.</small>
         </div>
 
-        <div class="field"><label for="notes">Anything else? <span class="opt">(optional: shrubs, trees, wreaths, or a neighbor booking too)</span></label><textarea id="notes" name="notes" maxlength="1000"></textarea></div>
-        <p class="fine">We’ll ask about timing and other details by text. Your request does not reserve a date; a 50% deposit holds your confirmed install date.</p>
+        <div class="field"><label for="notes">Anything else? <span class="opt">(shrubs, trees, wreaths, a neighbor booking too, gate codes, dogs)</span></label><textarea id="notes" name="notes" maxlength="1000"></textarea></div>
 
         <div class="hp" aria-hidden="true"><label for="website">Leave this empty</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
 
-        <button class="btn btn-ink" type="submit" id="submit">Request my install</button>
+        <button class="btn btn-submit" type="submit" id="submit">Send my request</button>
         <p class="status" id="status" role="status"></p>
       </form>
 
       <div class="done" id="done" hidden>
-        <h3>You're on the list.</h3>
+        <h3>Got it. Thank you!</h3>
         <p id="done-msg"></p>
-        <p>Didn't hear back? Text <a href="sms:+17852148759">(785) 214-8759</a>.</p>
+        <p>Didn’t hear back? Text <a href="sms:+17852148759">(785) 214-8759</a>.</p>
       </div>
     </div>
   </section>
@@ -450,9 +325,8 @@
 
 <footer>
   <div class="wrap">
-    <b>AIR CAPITAL LIGHTS</b>
-    <p>Veteran-owned Christmas light installation in Wichita, KS.</p>
-    <p>Call or text <a href="tel:+17852148759">(785) 214-8759</a> · Installs Nov 9 – Dec 15 · Takedown Jan 4–24</p>
+    <span><b>Air Capital Lights</b> · Veteran-owned · Wichita, Kansas</span>
+    <span>Call or text <a href="tel:+17852148759">(785) 214-8759</a></span>
   </div>
 </footer>
 
@@ -463,7 +337,6 @@
 
   const PRICES = {
     'One story': { 'Front roofline': 249, 'Front + sides': 399, 'Whole house': 549 },
-    'Two story': { 'Front roofline': null, 'Front + sides': null, 'Whole house': null },
   };
 
   // Early-bird runs through Sunday, Nov 8, Wichita time (Central Standard, UTC-6).
@@ -471,7 +344,11 @@
   const EARLY_BIRD = 20;
   const isEarly = () => Date.now() < EARLY_BIRD_ENDS.getTime();
 
+  // Color choice in the form <-> bulb colors in the house drawing
+  const SCHEMES = { 'Warm white': 'warm', 'Multicolor': 'multi', 'Red and white': 'redwhite' };
+
   const form = document.getElementById('booking');
+  const house = document.getElementById('house');
   const estimateEl = document.getElementById('estimate');
   const estimateNote = document.getElementById('estimate-note');
   const statusEl = document.getElementById('status');
@@ -487,11 +364,27 @@
     const height = picked('height');
     const pkg = picked('package');
     if (!height || !pkg) return 'Pick your options';
-    if (height === 'Not sure' || pkg === 'Not sure') return 'We’ll quote it';
+    if (height === 'Not sure' || pkg === 'Not sure') return 'I’ll quote it';
     if (height === 'Two story' || lights === 'Customer-owned lights') return 'Free custom quote';
-    if (lights !== 'Air Capital Lights LEDs') return 'We’ll quote it';
+    if (lights !== 'Air Capital Lights LEDs') return 'I’ll quote it';
     const off = isEarly() ? EARLY_BIRD : 0;
     return `$${PRICES[height][pkg] - off}`;
+  }
+
+  function showEstimate() {
+    const text = estimate();
+    estimateEl.textContent = text;
+    estimateNote.textContent = [
+      isEarly() && text.startsWith('$') ? 'Includes the $20 early-bird discount.' : '',
+      'Plus Kansas sales tax. Confirmed by text before you pay anything.',
+    ].filter(Boolean).join(' ');
+  }
+
+  function setScheme(scheme) {
+    house.dataset.scheme = scheme;
+    document.querySelectorAll('[data-scheme-btn]').forEach((b) => {
+      b.setAttribute('aria-pressed', String(b.dataset.schemeBtn === scheme));
+    });
   }
 
   function collect() {
@@ -499,15 +392,15 @@
     return {
       name: (fd.get('name') || '').trim(),
       phone: (fd.get('phone') || '').trim(),
-      email: (fd.get('email') || '').trim(),
+      email: '',
       address: (fd.get('address') || '').trim(),
       lights: picked('lights'),
       height: picked('height'),
       package: picked('package'),
-      extras: fd.getAll('extras').join(', '),
-      timing: fd.get('timing') || '',
-      neighbor: (fd.get('neighbor') || '').trim(),
-      heard: fd.get('heard') || '',
+      extras: '',
+      timing: '',
+      neighbor: '',
+      heard: '',
       notes: ['Color preference: ' + (picked('color') || 'Help me choose'), (fd.get('notes') || '').trim()].filter(Boolean).join('\n'),
       estimate: estimate() + (isEarly() && estimate().startsWith('$') ? ' (early-bird)' : ''),
       website: fd.get('website') || '',
@@ -516,16 +409,13 @@
 
   function smsLink(d) {
     const lines = [
-      'Air Capital Lights booking',
+      'Air Capital Lights request',
       `Name: ${d.name}`,
       `Phone: ${d.phone}`,
       `Address: ${d.address}`,
       `Lights: ${d.lights}`,
       `House: ${d.height}`,
       `Package: ${d.package} (${d.estimate})`,
-      d.extras && `More lights: ${d.extras}`,
-      d.timing && `When: ${d.timing}`,
-      d.neighbor && `Neighbor: ${d.neighbor}`,
       d.notes && `Notes: ${d.notes}`,
     ].filter(Boolean);
     return `sms:${PHONE}?&body=${encodeURIComponent(lines.join('\n'))}`;
@@ -534,36 +424,38 @@
   function showDone(d, viaText) {
     form.hidden = true;
     document.getElementById('done-msg').textContent = viaText
-      ? `Thanks, ${d.name}. Your text app should open with your details filled in. Hit send and Oliver will confirm your price and date.`
-      : `Thanks, ${d.name}. Oliver will text you at ${d.phone} today (first thing tomorrow if it's late) to confirm your price and date. A 50% deposit holds your spot.`;
+      ? `Thanks, ${d.name}. Your text app should open with your details filled in. Hit send and I’ll confirm your price and date.`
+      : `Thanks, ${d.name}. I’ll text you at ${d.phone} today (first thing tomorrow if it’s late) with your price and an install date.`;
     const done = document.getElementById('done');
     done.hidden = false;
     done.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
-  if (!isEarly()) {
-    document.querySelectorAll('[data-early]').forEach((el) => { el.hidden = true; });
-    document.querySelectorAll('[data-late]').forEach((el) => { el.hidden = false; });
-  }
+  if (!isEarly()) document.querySelectorAll('[data-early]').forEach((el) => { el.hidden = true; });
 
-  function showEstimate() {
-    const text = estimate();
-    estimateEl.textContent = text;
-    estimateNote.textContent = [
-      isEarly() && text.startsWith('$') ? 'Includes the $20 early-bird discount.' : '',
-      'For the listed footage and accessible one-story rooflines. Extras and applicable sales tax are additional. Final quote confirmed by text.',
-    ].filter(Boolean).join(' ');
-  }
-  document.querySelectorAll('[data-package]').forEach(link => {
+  document.querySelectorAll('[data-scheme-btn]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      setScheme(btn.dataset.schemeBtn);
+      const value = Object.keys(SCHEMES).find((k) => SCHEMES[k] === btn.dataset.schemeBtn);
+      const radio = form.querySelector(`input[name="color"][value="${value}"]`);
+      if (radio) radio.checked = true;
+    });
+  });
+
+  document.querySelectorAll('[data-package]').forEach((link) => {
     link.addEventListener('click', () => {
-      form.querySelector('input[name="package"][value="' + link.dataset.package + '"]').checked = true;
+      form.querySelector(`input[name="package"][value="${link.dataset.package}"]`).checked = true;
       form.querySelector('input[name="height"][value="One story"]').checked = true;
       form.querySelector('input[name="lights"][value="Air Capital Lights LEDs"]').checked = true;
       showEstimate();
     });
   });
+
+  form.addEventListener('change', (e) => {
+    if (e.target.name === 'color' && SCHEMES[e.target.value]) setScheme(SCHEMES[e.target.value]);
+    showEstimate();
+  });
   showEstimate();
-  form.addEventListener('change', showEstimate);
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
