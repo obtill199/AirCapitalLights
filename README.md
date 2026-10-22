@@ -47,3 +47,14 @@ and lighting, no people, cars, snow, logos, or text.
 The initial request asks for contact details and package preferences. Timing,
 referral source, neighbor details, and extras are confirmed during text follow-up.
 Existing endpoint field names are preserved for compatibility.
+
+## Color preferences
+
+The request form offers warm white, multicolor, red and white, and help choosing.
+Color preference is prepended to the existing notes field, so the deployed
+Google Sheet/email endpoint records it without a redeployment or new column.
+
+The multicolor hero is an edit of the original generated image using the built-in
+image generation tool. Prompt: change roofline bulbs only to repeating red, green,
+blue, and amber C9 bulbs with realistic glow; preserve the house and blue-hour
+scene. The original warm-white image is retained in assets.

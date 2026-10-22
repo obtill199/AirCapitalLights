@@ -297,6 +297,11 @@
     .section-heading h2 { font-size: 43px; }
   }
 
+  .color-intro { font-size: 14px; line-height: 1.8; max-width: 82ch; }
+  .color-swatch { display: inline-block; flex: none; width: 7px; height: 7px; border-radius: 50%; margin-right: 24px; background: #F4D49A; box-shadow: 9px 0 #F4D49A, 18px 0 #F4D49A; border: 1px solid #0002; }
+  .color-swatch.multi { background: #DC4248; box-shadow: 9px 0 #3F9C5D, 18px 0 #4284D9; }
+  .color-swatch.red-white { background: #DC4248; box-shadow: 9px 0 #E4D9C1, 18px 0 #DC4248; }
+  .color-choices + .fine { font-size: 12px; }
 </style>
 </head>
 <body>
@@ -316,7 +321,7 @@
   <div class="wrap">
     <nav class="brand" aria-label="Main navigation"><a class="wordmark" href="#">AIR CAPITAL <span>LIGHTS</span></a><div class="nav-links"><a href="#prices">Packages</a><a href="#book">Request an install <span aria-hidden="true">↗</span></a></div></nav>
     <div class="hero-copy"><p class="eyebrow">CHRISTMAS LIGHT INSTALLATION · WICHITA</p><h1>Make home feel<br>like <em>Christmas.</em></h1>
-    <p class="sub">The glow in the windows. The welcome from the street. Beautiful warm-white Christmas lights, hung for you and taken down in January. All you have to do is enjoy them.</p>
+    <p class="sub">The glow in the windows. The welcome from the street. Christmas lights in your favorite colors, hung for you and taken down in January. All you have to do is enjoy them.</p>
     <p class="promo" data-early>Early bird: book by Nov 8 and save $20</p>
     <div class="ctas">
       <a class="btn btn-amber" href="#book">Request my install</a>
@@ -324,9 +329,9 @@
     </div>
     <p class="call">Rather talk? Call <a href="tel:+17852148759">(785) 214-8759</a>. Thanksgiving spots confirmed by text, subject to availability and weather.</p>
     </div>
-    <figure class="hero-photo"><span class="photo-label">WARM WHITE. CLASSIC CHRISTMAS.</span>
-      <img src="assets/warm-white-roofline.jpg" width="1672" height="941" alt="Illustration of a one-story brick home at dusk with warm-white Christmas bulbs outlining the front roofline" fetchpriority="high">
-      <figcaption>AI-generated example of a warm-white roofline display. Actual coverage depends on your home and package.</figcaption>
+    <figure class="hero-photo"><span class="photo-label">YOUR COLORS. YOUR CHRISTMAS.</span>
+      <img src="assets/multicolor-roofline.jpg" width="1672" height="941" alt="Illustration of a one-story brick home at dusk with red, green, blue, and amber Christmas bulbs outlining the front roofline" fetchpriority="high">
+      <figcaption>AI-generated example of a multicolor roofline display. Actual coverage depends on your home and package.</figcaption>
     </figure>
   </div>
 </header>
@@ -335,7 +340,8 @@
   <section class="section" id="prices" aria-labelledby="prices-h">
     <div class="wrap">
       <div class="section-heading"><div><p class="eyebrow">CHRISTMAS CHEER, FROM THE CURB TO YOUR DOOR.</p><h2 id="prices-h">Find your Christmas glow.</h2></div><p>Simple seasonal packages.<br>One price, from install to takedown.</p></div>
-      <p>Every one-story package includes commercial-grade warm-white C9 LEDs, a timer, installation, seasonal service, January takedown, and storage.</p>
+      <p>Every one-story package includes commercial-grade C9 LEDs in your choice of colors, a timer, installation, seasonal service, January takedown, and storage.</p>
+      <p class="color-intro"><strong>Your Christmas, your colors.</strong> Choose warm white, festive multicolor, or classic red &amp; white. Have another combination in mind? Tell us when you request your install; we’ll confirm availability with your quote.</p>
       <div class="package-grid">
         <article class="package-card"><p class="package-number">01 / THE CLASSIC</p><h3>Front roofline</h3><p class="package-scope">A classic Christmas welcome.</p><p class="package-price">$249<span> / season</span></p><p class="package-length">One story · up to 70 ft</p><a href="#book" class="package-link" data-package="Front roofline">Choose front roofline <span aria-hidden="true">↗</span></a></article>
         <article class="package-card featured"><p class="package-number">02 / A LITTLE MORE GLOW</p><h3>Front + sides</h3><p class="package-scope">Carry the Christmas glow around the corners.</p><p class="package-price">$399<span> / season</span></p><p class="package-length">One story · up to 120 ft total</p><a href="#book" class="package-link" data-package="Front + sides">Choose front + sides <span aria-hidden="true">↗</span></a></article>
@@ -383,6 +389,17 @@
             <label class="choice"><input type="radio" name="lights" value="Customer-owned lights"><span>My own lights (custom quote)</span></label>
             <label class="choice"><input type="radio" name="lights" value="Not sure"><span>Not sure</span></label>
           </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>What colors do you like?</legend>
+          <div class="choices color-choices">
+            <label class="choice"><input type="radio" name="color" value="Warm white"><span><i class="color-swatch warm" aria-hidden="true"></i>Warm white</span></label>
+            <label class="choice"><input type="radio" name="color" value="Multicolor"><span><i class="color-swatch multi" aria-hidden="true"></i>Multicolor</span></label>
+            <label class="choice"><input type="radio" name="color" value="Red and white"><span><i class="color-swatch red-white" aria-hidden="true"></i>Red &amp; white</span></label>
+            <label class="choice"><input type="radio" name="color" value="Help me choose" checked><span>Help me choose</span></label>
+          </div>
+          <p class="fine">We’ll confirm colors and availability by text. Want a different combination? Add it in the notes below.</p>
         </fieldset>
 
         <fieldset>
@@ -488,7 +505,7 @@
       timing: fd.get('timing') || '',
       neighbor: (fd.get('neighbor') || '').trim(),
       heard: fd.get('heard') || '',
-      notes: (fd.get('notes') || '').trim(),
+      notes: ['Color preference: ' + (picked('color') || 'Help me choose'), (fd.get('notes') || '').trim()].filter(Boolean).join('\n'),
       estimate: estimate() + (isEarly() && estimate().startsWith('$') ? ' (early-bird)' : ''),
       website: fd.get('website') || '',
     };
