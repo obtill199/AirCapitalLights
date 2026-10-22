@@ -11,7 +11,7 @@
 <meta name="theme-color" content="#0B1A33">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&family=Big+Shoulders+Display:wght@700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&family=Big+Shoulders+Display:wght@700;900&family=Caveat:wght@600;700&display=swap">
 <style>
   :root {
     --night: #0B1A33;
@@ -253,6 +253,50 @@
     .btn:hover, .package-link:hover { transform: none; }
   }
 
+
+  /* Christmas: evergreen, cranberry, warm light, and a handwritten greeting. */
+  :root { --night: #102E28; --night-2: #173E34; --ink: #173A30; --amber: #F1C577; --mist: #F5F1E7; --paper: #FFFCF6; --muted-night: #D9E6DE; }
+  .hero { padding-top: 46px; background: radial-gradient(ellipse at 80% 50%, #294538 0, #102E28 64%); }
+  .lights { display: block; height: 64px; opacity: .95; pointer-events: none; }
+  .lights .bulb-red path { fill: #EF7B71; }
+  .lights .bulb-red circle { fill: #EF7B71; }
+  .lights .bulb-green path { fill: #91BA92; }
+  .lights .bulb-green circle { fill: #91BA92; }
+  .hero .brand { border-color: #D8D9BA30; }
+  .hero h1 { font-size: clamp(56px, 5.2vw, 75px); line-height: 1.05; }
+  .hero h1 em { font-family: Caveat, cursive; font-weight: 700; font-size: 1.24em; letter-spacing: -.04em; line-height: 1; }
+  .hero .sub { font-size: 16px; line-height: 1.8; }
+  .hero-photo { position: relative; }
+  .hero-photo img { border: 1px solid #F1C57744; box-shadow: 0 18px 70px #00000030; }
+  .photo-label { display: inline-block; position: absolute; z-index: 1; top: -13px; left: 18px; padding: 7px 12px; border: 1px solid #DDBE8D; background: #F5EBD6; color: #264135; font-size: 9px; font-weight: 800; letter-spacing: .12em; }
+  .btn-amber { background: #A83F3F; color: #FFF8ED; border-color: #C77868; }
+  .btn-amber:hover { background: #BB4A48; }
+  .promo { color: #F7D89E; }
+  .section-heading .eyebrow, .book-intro .eyebrow { color: #963B39; }
+  .section-heading h2 { max-width: 16ch; }
+  .package-card { background: #F6F1E7; border-color: #DDD5C5; }
+  .package-number { color: #8D3737; }
+  .package-card.featured { background: #173A30; color: #FFF8EA; border-color: #173A30; }
+  .package-link { color: #8C3435; }
+  .featured .package-link { color: var(--amber); }
+  .includes svg path { stroke: #8D3737; }
+  .book { border-top: 1px solid #DDD5C5; }
+  .book-intro h2 { line-height: 1.08; }
+  .extras .label { color: #8D3737; }
+  footer { border-top: 3px solid #A64741; }
+  @media (max-width: 899px) {
+    .hero h1 { font-size: 70px; }
+    .hero-photo { margin-top: 12px; }
+  }
+  @media (max-width: 600px) {
+    .hero { padding-top: 40px; }
+    .hero h1 { font-size: 47px; }
+    .hero .sub { font-size: 15px; }
+    .hero-copy { gap: 18px; }
+    .photo-label { font-size: 8px; left: 12px; }
+    .section-heading h2 { font-size: 43px; }
+  }
+
 </style>
 </head>
 <body>
@@ -262,17 +306,17 @@
     <defs>
       <pattern id="strand" width="204" height="64" patternUnits="userSpaceOnUse">
         <path d="M0 6 Q102 46 204 6" fill="none" stroke="#3D6B57" stroke-width="2.5"/>
-        <g transform="translate(51 21)"><circle cx="0" cy="18" r="13" fill="#F5B041" opacity="0.22"/><rect x="-4" y="0" width="8" height="7" rx="1.5" fill="#3D6B57"/><path d="M-6 7 C-7.5 15 -3 22 0 27 C3 22 7.5 15 6 7 Z" fill="#F5B041"/></g>
-        <g transform="translate(102 26)"><circle cx="0" cy="18" r="13" fill="#F5B041" opacity="0.22"/><rect x="-4" y="0" width="8" height="7" rx="1.5" fill="#3D6B57"/><path d="M-6 7 C-7.5 15 -3 22 0 27 C3 22 7.5 15 6 7 Z" fill="#F5B041"/></g>
-        <g transform="translate(153 21)"><circle cx="0" cy="18" r="13" fill="#F5B041" opacity="0.22"/><rect x="-4" y="0" width="8" height="7" rx="1.5" fill="#3D6B57"/><path d="M-6 7 C-7.5 15 -3 22 0 27 C3 22 7.5 15 6 7 Z" fill="#F5B041"/></g>
+        <g class="bulb-red" transform="translate(51 21)"><circle cx="0" cy="18" r="13" fill="#F5B041" opacity="0.22"/><rect x="-4" y="0" width="8" height="7" rx="1.5" fill="#3D6B57"/><path d="M-6 7 C-7.5 15 -3 22 0 27 C3 22 7.5 15 6 7 Z" fill="#F5B041"/></g>
+        <g class="bulb-gold" transform="translate(102 26)"><circle cx="0" cy="18" r="13" fill="#F5B041" opacity="0.22"/><rect x="-4" y="0" width="8" height="7" rx="1.5" fill="#3D6B57"/><path d="M-6 7 C-7.5 15 -3 22 0 27 C3 22 7.5 15 6 7 Z" fill="#F5B041"/></g>
+        <g class="bulb-green" transform="translate(153 21)"><circle cx="0" cy="18" r="13" fill="#F5B041" opacity="0.22"/><rect x="-4" y="0" width="8" height="7" rx="1.5" fill="#3D6B57"/><path d="M-6 7 C-7.5 15 -3 22 0 27 C3 22 7.5 15 6 7 Z" fill="#F5B041"/></g>
       </pattern>
     </defs>
     <rect width="100%" height="64" fill="url(#strand)"/>
   </svg>
   <div class="wrap">
     <nav class="brand" aria-label="Main navigation"><a class="wordmark" href="#">AIR CAPITAL <span>LIGHTS</span></a><div class="nav-links"><a href="#prices">Packages</a><a href="#book">Request an install <span aria-hidden="true">↗</span></a></div></nav>
-    <div class="hero-copy"><p class="eyebrow">CHRISTMAS LIGHT INSTALLATION · WICHITA</p><h1>Holiday lights.<br><em>Handled.</em></h1>
-    <p class="sub">Warm-white lights, fitted to your home. We install them, keep them shining, and take them down in January. You never touch a ladder.</p>
+    <div class="hero-copy"><p class="eyebrow">CHRISTMAS LIGHT INSTALLATION · WICHITA</p><h1>Make home feel<br>like <em>Christmas.</em></h1>
+    <p class="sub">The glow in the windows. The welcome from the street. Beautiful warm-white Christmas lights, hung for you and taken down in January. All you have to do is enjoy them.</p>
     <p class="promo" data-early>Early bird: book by Nov 8 and save $20</p>
     <div class="ctas">
       <a class="btn btn-amber" href="#book">Request my install</a>
@@ -280,7 +324,7 @@
     </div>
     <p class="call">Rather talk? Call <a href="tel:+17852148759">(785) 214-8759</a>. Thanksgiving spots confirmed by text, subject to availability and weather.</p>
     </div>
-    <figure class="hero-photo">
+    <figure class="hero-photo"><span class="photo-label">WARM WHITE. CLASSIC CHRISTMAS.</span>
       <img src="assets/warm-white-roofline.jpg" width="1672" height="941" alt="Illustration of a one-story brick home at dusk with warm-white Christmas bulbs outlining the front roofline" fetchpriority="high">
       <figcaption>AI-generated example of a warm-white roofline display. Actual coverage depends on your home and package.</figcaption>
     </figure>
@@ -290,12 +334,12 @@
 <main>
   <section class="section" id="prices" aria-labelledby="prices-h">
     <div class="wrap">
-      <div class="section-heading"><div><p class="eyebrow">A LITTLE HOLIDAY MAGIC. ZERO LADDER TIME.</p><h2 id="prices-h">Your home. Your glow.</h2></div><p>Simple seasonal packages.<br>One price, from install to takedown.</p></div>
-      <p>Our one-story packages include commercial-grade warm-white C9 LEDs, a timer, installation, seasonal service, January takedown, and storage.</p>
+      <div class="section-heading"><div><p class="eyebrow">CHRISTMAS CHEER, FROM THE CURB TO YOUR DOOR.</p><h2 id="prices-h">Find your Christmas glow.</h2></div><p>Simple seasonal packages.<br>One price, from install to takedown.</p></div>
+      <p>Every one-story package includes commercial-grade warm-white C9 LEDs, a timer, installation, seasonal service, January takedown, and storage.</p>
       <div class="package-grid">
-        <article class="package-card"><p class="package-number">01 / THE CLASSIC</p><h3>Front roofline</h3><p class="package-scope">A warm welcome from the street.</p><p class="package-price">$249<span> / season</span></p><p class="package-length">One story · up to 70 ft</p><a href="#book" class="package-link" data-package="Front roofline">Choose front roofline <span aria-hidden="true">↗</span></a></article>
-        <article class="package-card featured"><p class="package-number">02 / A LITTLE MORE GLOW</p><h3>Front + sides</h3><p class="package-scope">A polished look around the corners.</p><p class="package-price">$399<span> / season</span></p><p class="package-length">One story · up to 120 ft total</p><a href="#book" class="package-link" data-package="Front + sides">Choose front + sides <span aria-hidden="true">↗</span></a></article>
-        <article class="package-card"><p class="package-number">03 / ALL THE WAY AROUND</p><h3>Whole house</h3><p class="package-scope">Holiday spirit from every angle.</p><p class="package-price">$549<span> / season</span></p><p class="package-length">One story · up to 180 ft total</p><a href="#book" class="package-link" data-package="Whole house">Choose whole house <span aria-hidden="true">↗</span></a></article>
+        <article class="package-card"><p class="package-number">01 / THE CLASSIC</p><h3>Front roofline</h3><p class="package-scope">A classic Christmas welcome.</p><p class="package-price">$249<span> / season</span></p><p class="package-length">One story · up to 70 ft</p><a href="#book" class="package-link" data-package="Front roofline">Choose front roofline <span aria-hidden="true">↗</span></a></article>
+        <article class="package-card featured"><p class="package-number">02 / A LITTLE MORE GLOW</p><h3>Front + sides</h3><p class="package-scope">Carry the Christmas glow around the corners.</p><p class="package-price">$399<span> / season</span></p><p class="package-length">One story · up to 120 ft total</p><a href="#book" class="package-link" data-package="Front + sides">Choose front + sides <span aria-hidden="true">↗</span></a></article>
+        <article class="package-card"><p class="package-number">03 / ALL THE WAY AROUND</p><h3>Whole house</h3><p class="package-scope">Christmas cheer from every angle.</p><p class="package-price">$549<span> / season</span></p><p class="package-length">One story · up to 180 ft total</p><a href="#book" class="package-link" data-package="Whole house">Choose whole house <span aria-hidden="true">↗</span></a></article>
       </div>
       <p class="fine">For accessible one-story rooflines. We confirm measurements and access before you pay. Longer rooflines, complex peaks, and two-story homes receive a custom quote. Plus applicable Kansas sales tax. Installs booked after Dec 1 add $50.</p>
       <p><strong>Already own lights?</strong> We can quote installation and takedown after checking your strands and roofline. Customer-owned lights are quoted separately.</p>
@@ -323,7 +367,7 @@
 
   <section class="section book" id="book" aria-labelledby="book-h">
     <div class="wrap">
-      <div class="book-intro"><p class="eyebrow">LET’S LIGHT UP YOUR HOLIDAYS</p><h2 id="book-h">We’ll take it<br>from here.</h2><p>Tell us a little about your home. Oliver will text you the same day to confirm your quote and an available date.</p><p class="book-assurance">No payment until you approve your quote.</p><a class="book-text" href="sms:+17852148759">Prefer to text? (785) 214-8759 ↗</a></div>
+      <div class="book-intro"><p class="eyebrow">A MERRIER HOME STARTS HERE</p><h2 id="book-h">Let’s make<br>Christmas shine.</h2><p>Tell us a little about your home. Oliver will text you the same day to confirm your quote and an available date.</p><p class="book-assurance">No payment until you approve your quote.</p><a class="book-text" href="sms:+17852148759">Prefer to text? (785) 214-8759 ↗</a></div>
 
       <form id="booking" novalidate>
         <div class="grid2">
