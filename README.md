@@ -39,9 +39,8 @@ complex rooflines, and customer-owned lights receive a custom quote. One $20
 promotion applies per home per season. Supplied lights remain company property.
 
 The site no longer shows the AI-generated images in `assets/` (kept for reference).
-The hero is an inline SVG drawing of a one-story house whose bulbs switch between
-warm white, multicolor, and red & white with the color buttons and the form's
-color choice. Swap in a real photo of an install when you have one.
+The hero is an inline SVG strand of C9 bulbs that switch between warm white,
+multicolor, and red & white with the color buttons and the form's color choice. Swap in a real photo of an install when you have one.
 
 The initial request asks for contact details and package preferences. Timing,
 referral source, neighbor details, and extras are confirmed during text follow-up.
